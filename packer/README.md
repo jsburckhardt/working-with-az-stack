@@ -16,7 +16,7 @@ Packer is use for creating the base image used by VMs. In other words, the OS im
     export ARM_CLIENT_SECRET="<P client password>"
     export ARM_SSH_PASS="<ssh password for accessing the packer vm>"
     export ARM_SUBSCRIPTION_ID="<subscription>"
-    export ARM_TENANT_ID="72f988bf-86f1-41af-91ab-2d7cd011db47"
+    export ARM_TENANT_ID="<tenant id>"
     export RESOURCE_GROUP="<resource group>"
     export STORAGE_ACCOUNT="<resource group>"
     ```
@@ -24,9 +24,9 @@ Packer is use for creating the base image used by VMs. In other words, the OS im
 2. Create the Image
   
     ```bash
-    packer validate vhd.<centos|ubuntu>.pkr.hcl
-    packer fmt vhd.<centos|ubuntu>.pkr.hcl
-    packer build vhd.<centos|ubuntu>.pkr.hcl
+    packer validate vhd.<centos|ubuntu|ubuntu-opentdf>.pkr.hcl
+    packer fmt vhd.<centos|ubuntu|ubuntu-opentdf>.pkr.hcl
+    packer build vhd.<centos|ubuntu|ubuntu-opentdf>.pkr.hcl
     ```
 
-3. Bring the VHD to the ASX to create an OS image. -> showed in the bootstrap demo.
+3. Bring the VHD to the ASX to create an OS image.

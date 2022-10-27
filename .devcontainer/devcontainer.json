@@ -28,7 +28,8 @@
 		"mutantdino.resourcemonitor",
 		"timonwong.shellcheck",
 		"exiasr.hadolint",
-		"pomdtr.excalidraw-editor"
+		"pomdtr.excalidraw-editor",
+		"4ops.packer"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
