@@ -20,16 +20,17 @@
 
 	"extensions": [
 		"IBM.output-colorizer",
-        "oderwat.indent-rainbow",
-        "davidanson.vscode-markdownlint",
-        "eamodio.gitlens",
-        "eriklynd.json-tools",
+		"oderwat.indent-rainbow",
+		"davidanson.vscode-markdownlint",
+		"eamodio.gitlens",
+		"eriklynd.json-tools",
 		"aaron-bond.better-comments",
 		"mutantdino.resourcemonitor",
 		"timonwong.shellcheck",
 		"exiasr.hadolint",
 		"pomdtr.excalidraw-editor",
-		"4ops.packer"
+		"4ops.packer",
+		"ms-vscode.powershell"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
