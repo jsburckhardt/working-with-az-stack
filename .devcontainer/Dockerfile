@@ -6,6 +6,9 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends packer
+    && apt-get -y install --no-install-recommends software-properties-common
 
-
+# install packer
+RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - \
+    && apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" \
+    && apt-get update && apt-get install packer
